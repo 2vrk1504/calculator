@@ -1,0 +1,247 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vramakanth.calculator.MainActivity"
+      
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+
+    android:orientation="vertical"
+      >
+
+    <TextView
+        android:paddingTop="16dp"
+        android:paddingBottom="32dp"
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:id="@+id/display"
+        
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_margin="4dp"
+        android:text="CLEAR EVERYTHING FROM MEMORY"
+        android:onClick="clear"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/no7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_margin="4dp"
+            android:text="7"
+            android:onClick="no"
+              
+            android:layout_weight="1"
+            />
+        <Button
+            android:id="@+id/no8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_margin="4dp"
+            android:text="8"
+            android:onClick="no"
+              
+            android:layout_weight="1"
+            />
+        <Button
+            android:id="@+id/no9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_margin="4dp"
+            android:text="9"
+            android:onClick="no"
+              
+            android:layout_weight="1"
+            />
+        <Button
+            android:id="@+id/opx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_margin="4dp"
+            android:text="*"
+            android:onClick="op"
+              
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/no4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_margin="4dp"
+            android:text="4"
+              
+            android:onClick="no"
+            android:layout_weight="1"
+            />
+        <Button
+            android:id="@+id/no5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_margin="4dp"
+              
+            android:text="5"
+            android:onClick="no"
+            android:layout_weight="1"
+            />
+        <Button
+            android:id="@+id/no6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:padding="8dp"
+            android:layout_margin="4dp"
+            android:text="6"
+            android:onClick="no"
+              
+            android:layout_weight="1"
+            />
+        <Button
+            android:id="@+id/opdiv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_margin="4dp"
+              
+            android:text="/"
+            android:onClick="op"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/no1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_margin="4dp"
+            android:text="1"
+            android:onClick="no"
+              
+            android:layout_weight="1"
+            />
+        <Button
+            android:id="@+id/no2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_margin="4dp"
+            android:text="2"
+              
+            android:onClick="no"
+            android:layout_weight="1"
+            />
+        <Button
+            android:id="@+id/no3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_margin="4dp"
+            android:text="3"
+            android:onClick="no"
+              
+            android:layout_weight="1"
+            />
+        <Button
+            android:id="@+id/opmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_margin="4dp"
+              
+            android:text="-"
+            android:onClick="op"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/no0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_margin="4dp"
+            android:text="0"
+            android:onClick="no"
+              
+            android:layout_weight="1"
+            />
+        <Button
+            android:id="@+id/noDot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_margin="4dp"
+            android:text="."
+            android:onClick="no"
+              
+            android:layout_weight="1"
+            />
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_margin="4dp"
+            android:text="="
+            android:onClick="equals"
+              
+            android:layout_weight="1"
+            />
+        <Button
+            android:id="@+id/opplus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_margin="4dp"
+            android:text="+"
+            android:onClick="op"
+              
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_margin="4dp"
+        android:text="MORE ABOUT DEVELOPER"
+        android:onClick="moreAbout"
+        android:background="@color/red"
+        android:textColor="#FFFFFF"
+        android:id="@+id/dev"
+        />
+</LinearLayout>
+</ScrollView>
